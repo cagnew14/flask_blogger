@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Create a route decorator
 @app.route('/')
 
-#def index(): new Change
+#def index(): 
 #	return "<h1>Hello World!</h1>"
 
 def index():
