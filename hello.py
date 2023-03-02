@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Create a route decorator
 @app.route('/')
 
-#def index():
+#def index(): new Change
 #	return "<h1>Hello World!</h1>"
 
 def index():
@@ -15,8 +15,8 @@ def index():
 	stuff = "This is bold text"
 
 	favoritePizza=['Pepperoni','Cheese','Sausage',41]
-	return render_template("index.html", 
-		firstName=firstName, 
+	return render_template("index.html",
+		firstName=firstName,
 		stuff=stuff,
 		favoritePizza=favoritePizza)
 
@@ -34,8 +34,7 @@ def user(name):
 def page_not_found(e):
 	return render_template("404.html"), 404
 
-# Internal Server Error 
+# Internal Server Error
 @app.errorhandler(500)
 def page_not_found(e):
 	return render_template("500.html"), 500
-
